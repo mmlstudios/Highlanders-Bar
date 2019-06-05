@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Highlanders bar</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo"><a href="#heroimg"><img src="favicon.png" alt="logo" class="logo-img" onclick="menuClick()"></a></div>
+      <div id="nav"></div>
+      <nav>
+        <ul>
+          <li><a href="#footer" style="text-decoration:none" class="navitem" onclick="menuClick()">INFO</a></li>
+          <li><a href="#booking" style="text-decoration:none" class="navitem" onclick="menuClick()">BOOKING</a></li>
+          <li><a href="#FandD" style="text-decoration:none" class="navitem" onclick="menuClick()">THE BAR</a></li>
+          <li><a href="#about" style="text-decoration:none" class="navitem" onclick="menuClick()">ABOUT</a></li>
+        </ul>
+      </nav>
+      <div id="menuToggle">
+
+    <input type="checkbox" name="navMob" id="checkBoxen"/>
+
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <ul id="menu">
+      <li><a href="#about" class="mobNav" onclick="unCheck()">ABOUT</a></li>
+      <li><a href="#FandD-mobile" class="mobNav" onclick="unCheck()">THE BAR</a></li>
+      <li><a href="#booking" class="mobNav" onclick="unCheck()">BOOKING</a></li>
+      <li><a href="#footer" class="mobNav" onclick="unCheck()">INFO</a></li>
+    </ul>
+  </div>
+    </div>
+  </header>
+
+  <main>
+<div id="wrapper">
+    <div id="heroimg">
+      <h2>Welcome to Highlanders Bar</h2>
+    </div>
+    <div id="about">
+      <h2>About</h2>
+      <div class="about-content">
+        <p>No TV’s – No Loud Music – Just Talk.</p>
+        <p>We offer the type of friendly atmosphere that you know
+          from english/scottish pubs both at home and around the world,
+          many off our staff are from scotland & england, whilst others are locals.
+          </p>
+
+          <p>We have a selection of more than 200 different whiskies, 100 different rums,
+            around 20-30 different bourbon & rye whisky, 16 beer taps which change freqeuently and have recently introduced around 10 different gins.</p>
+      </div>
+
+    </div>
+    <div id="FandD">
+      <div id="left" onmouseover='expandLeft()' onmouseout='normal()' onclick="allClick()">
+        <h3>TO DRINK</h3>
+      </div>
+      <div id="right" onmouseover='expandright()' onmouseout='normal()' onclick="getFood()">
+        <h3>TO EAT</h3>
+      </div>
+    </div>
+
+    <div id="FandD-mobile">
+      <div id="goToDesktop">
+        <h3>We have a wide everchanging assortment of foods and drinks to get a clear overview of it all, visit our desktop site</h3>
+    </div>
+</div>
+
+    <div id="booking">
+      <h2>Booking</h2>
+
+      <div class="booking-content">
+        <div id="bookingimg"><img src="images/bookingform.jpg" alt=""></div>
+        <p>
+          If you would like to organise a private tasting, whether it is for a group of friends,
+          a club or for your company we can organise this for you.
+          It can be based on our ‘a la carte’ tasting menu or we can organise something special.
+        </p>
+        <p>
+          Our prices vary depending on various factors.
+        If you are on a budget or want to really splash out then we can usually figure something out.
+        </p>
+      </div>
+    </div>
+    <div id="heroimg-2">
+      <h2>We're looking forward to seeing you</h2>
+    </div>
+
+</div>
+
+
+    <div id="drinks">
+          <div class="drinksnav">
+            <img src="images/arrow.png" alt="back" onclick="menuClick()">
+            <ul>
+              <li class="navitem-2" onclick="spiritsClick()">SPIRITS</li>
+              <li class="navitem-2" onclick="liquerClick()">LIQUERS</li>
+              <li class="navitem-2" onclick="beerClick()">BEERS</li>
+              <li class="navitem-2" onclick="whiskeyClick()">WHISKEYS</li>
+              <li class="navitem-2" onclick="allClick()">ALL</li>
+            </ul>
+          </div>
+          <div id="allwrapper">
+            <section id="grid-posts-1" class="grid-container-1"></section>
+          </div>
+          <div id="whiskeywrapper">
+            <section id="grid-posts-whiskey" class="grid-container-whiskey"></section>
+          </div>
+          <div id="beerwrapper">
+            <section id="grid-posts-beer" class="grid-container-beer"></section>
+          </div>
+          <div id="liquerwrapper">
+            <section id="grid-posts-liquer" class="grid-container-liquer"></section>
+          </div>
+          <div id="spiritswrapper">
+            <section id="grid-posts-spirits" class="grid-container-spirits"></section>
+          </div>
+    </div>
+
+    <div id="foods">
+
+    </div>
+
+  </main>
+
+  <footer id="footer">
+    <div class="info">
+      <h5>Contact info:</h5>
+      <div>
+        <p>info@highlandersbar.dk</p>
+        <p>+45 86 13 14 79</p>
+        <p>CVR Nr: 36470372</p>
+      </div>
+    </div>
+
+    <div class="footer-line"></div>
+
+    <div class="location">
+      <h5>Location:</h5>
+      <div>
+        <p>Mindebrogade 5
+        </p>
+        <p>8000 Aarhus C</p>
+      </div>
+    </div>
+
+    <div class="footer-line"></div>
+
+    <div class="hours">
+      <h5>Opening hours:</h5>
+      <div class="days">
+        <p>Monday:</p>
+        <p>Tues-Thurs:</p>
+        <p>Fri-Satur:</p>
+        <p>Sunday:</p>
+      </div>
+
+      <div class="time">
+        <p>Closed</p>
+        <p>16:00 - 00:00</p>
+        <p>16:00 - 02:00</p>
+        <p>14:00 - 22:00</p>
+      </div>
+    </div>
+
+    <div class="footer-line"></div>
+
+    <div class="So-Me">
+      <h5>Social media:</h5>
+      <a href="https://www.facebook.com/HighlandersAarhus/"><img src="images/facebook.png" alt=""></a>
+      <a href="https://www.instagram.com/highlandersaarhus/"><img src="images/insta.png" alt=""></a>
+      <a href="https://twitter.com/highlanders_aar"><img src="images/twitter.png" alt=""></a>
+    </div>
+  </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/fetch.js"></script>
+</body>
+
+
+</html>

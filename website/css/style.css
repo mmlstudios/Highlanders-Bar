@@ -1,0 +1,1099 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Gotham;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  font-family: Gotham;
+  overflow-x: hidden;
+}
+
+#menuToggle {
+  display: none;
+}
+
+.top-bar {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  z-index: 2;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0);
+  transition: all 0.4s;
+}
+
+.top-bar-alt {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 2;
+  font-weight: bold;
+  background-color: rgb(0, 0, 0, 0.5);
+  transition: all 0.4s;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0);
+  margin-right: 20px;
+}
+
+li {
+  float: right;
+}
+
+.navitem {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 26px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0);
+  transition: 0.3s;
+  background-size: cover;
+}
+
+.navitem:hover {
+  background: rgba(255, 255, 255);
+  background-size: cover;
+  color: black
+}
+
+.navitem-alt {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  background: url(../images/nav-bgr-bfr.png);
+  transition: 0.3s;
+  background-size: cover;
+}
+
+.navitem-alt:hover {
+  background: url(../images/nav-bgr.png);
+  background-size: cover;
+}
+
+.logo {
+  float: left;
+  margin-left: 20px;
+  width: 100px;
+  height: 70px;
+  transition: all 0.4s;
+}
+
+.logo-alt {
+  float: left;
+  margin-left: 20px;
+  width: 100px;
+  height: 50px;
+  transition: all 0.4s;
+}
+
+.logo-img {
+  height: 100%;
+  transition: all 0.4s;
+}
+
+#heroimg {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45),
+    rgba(50, 106, 140, 0.45)),
+    url(../images/img-1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  font-size: 4em;
+  font-weight: 400;
+  color: rgba(255, 255, 255);
+  -webkit-text-stroke: 0.5px black;
+}
+
+#about {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  font-family: Gotham;
+  background-color: rgb(229, 189, 142);
+  color: white;
+  position: relative;
+}
+
+#about h2 {
+  width: 100%;
+  height: 25vh;
+  text-align: center;
+  position: relative;
+  top: 12%;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.about-content {
+  width: 100%;
+  height: 75vh;
+  background-color: white;
+  position: relative;
+  color: black;
+  text-align: center;
+}
+
+.about-content p {
+  padding: 10%;
+  padding-bottom: 0%;
+  padding-top: 4%;
+  font-size: 1.5em
+}
+
+.about-content p:nth-child(1) {
+  font-size: 2em;
+  padding-top: 6%;
+  font-weight: bold;
+}
+
+#FandD {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  font-weight: 500;
+  font-family: Gotham;
+  background-color: black;
+}
+
+#FandD-mobile {
+  display: none;
+}
+
+#left {
+  background: url(../images/img-2.jpg);
+  opacity: 0.5;
+  width: 50%;
+  position: relative;
+  left: 0;
+  height: 100vh;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#left h3 {
+  color: white;
+  -webkit-text-stroke: 0.5px black;
+  font-size: 4em;
+  text-align: center;
+  transform: translateY(450%);
+}
+
+#right {
+  background: url(../images/img-3.jpg);
+  opacity: 0.5;
+  width: 50%;
+  position: relative;
+  right: 0;
+  height: 100vh;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#right h3 {
+  color: white;
+  -webkit-text-stroke: 0.5px black;
+  font-size: 4em;
+  text-align: center;
+  transform: translateY(450%);
+}
+
+#foods {
+  width: 100%;
+  padding-top: 90px;
+  height: 100vh;
+  position: relative;
+  left: 100%;
+  transform: translateY(0vh);
+  background: rgb(255, 255, 0);
+  transition: all 0.25s;
+  display: none;
+}
+
+#drinks {
+  width: 100%;
+  overflow: auto;
+  position: relative;
+  left: -100%;
+  background-color: white;
+  transition: all 0.25s;
+  display: none;
+}
+
+#booking {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  font-weight: bold;
+  font-family: Gotham;
+  background-color: rgb(229, 189, 142);
+  color: white;
+  position: relative;
+}
+
+#booking h2 {
+  width: 100%;
+  height: 25vh;
+  text-align: center;
+  position: relative;
+  top: 12%;
+  font-size: 2.5em;
+}
+
+.booking-content {
+  width: 100%;
+  height: 75vh;
+  background-color: white;
+  position: relative;
+  color: black;
+}
+
+#bookingimg {
+  width: 30%;
+  left: 0;
+  padding: 10%;
+  padding-bottom: 0%;
+  padding-top: 4%;
+  float: left;
+}
+
+#bookingimg img {
+  width: 100%;
+}
+
+.booking-content p {
+  position: absolute;
+  width: 40%;
+  right: 0;
+  padding: 5%;
+  padding-top: 6%;
+  font-size: 1.5em;
+  float: left;
+}
+
+.booking-content p:nth-child(3) {
+  position: absolute;
+  width: 40%;
+  right: 0;
+  top: 35vh;
+  padding: 5%;
+  padding-top: 6%;
+  font-size: 1.5em;
+  float: left;
+}
+
+#heroimg-2 {
+  background:
+    linear-gradient(rgba(0, 0, 0, 1),
+    rgba(248, 189, 120, 0.40)),
+    url(../images/img-5.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60vh;
+  font-size: 4em;
+  font-weight: 400;
+  color: rgba(255, 255, 255);
+  -webkit-text-stroke: 0.5px black;
+}
+
+#footer {
+  width: 100%;
+  height: 40vh;
+  background-color: rgb(204, 204, 204);
+  border-top: 5px solid rgb(61, 61, 61);
+}
+
+#footer h5 {
+  float: left;
+  width: 100%;
+  font-size: 1.5em;
+  color: rgb(61, 61, 61);
+  -webkit-text-stroke: 0.2px black;
+  margin-bottom: 10px;
+}
+
+#footer p {
+  font-family: "helvetica neue";
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.footer-line {
+  float: left;
+  width: 2px;
+  height: 38vh;
+  background: linear-gradient(189deg, rgba(15, 255, 230, 0.20) 0%, rgba(32, 109, 111, 0.75) 38%, rgba(71, 22, 201, 0.51) 90%);
+  margin-top: 7px;
+  margin-right: 1%;
+}
+
+.info {
+  float: left;
+  width: 21%;
+  margin-top: 25px;
+  margin-left: 3%;
+}
+
+.info div {
+  float: left;
+  width: 100%;
+}
+
+.location {
+  float: left;
+  width: 24%;
+  margin-top: 25px;
+}
+
+.location div {
+  float: left;
+  width: 100%;
+}
+
+.hours {
+  float: left;
+  width: 29%;
+  margin-top: 25px;
+}
+
+.days {
+  float: left;
+  width: 40%;
+}
+
+.time {
+  float: left;
+  width: 60%;
+}
+
+.So-Me {
+  float: left;
+  width: 15%;
+  margin-top: 25px;
+  margin-right: 2%;
+}
+
+.So-Me h5 {
+  padding-bottom: 7.5px
+}
+
+.So-Me img {
+  width: 40%;
+  padding-left: 2%
+}
+
+.So-Me a:nth-child(4) {
+  padding-left: 23%;
+}
+
+.drinksnav {
+  padding-top: 70px;
+  padding-bottom: 26px;
+  background-color: rgb(229, 189, 142);
+  width: 100%;
+  font-weight: bold;
+}
+
+.drinksnav img {
+  width: 5%;
+  margin-left: 2.5%;
+  height: 40px;
+  cursor: pointer;
+  transform: translateY(15px);
+}
+
+.drinksnav ul {
+  float: right;
+  width: 90%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0);
+  margin-right: 2%;
+}
+
+.drinksnav li {
+  float: right;
+}
+
+.navitem-2 {
+  cursor: pointer;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 26px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0);
+  transition: 0.3s;
+  background-size: cover;
+}
+
+.navitem-2:hover {
+  background: rgba(255, 255, 255);
+  background-size: cover;
+  color: black
+}
+
+#grid-posts-1 {
+  display: inherit;
+  position: relative;
+  text-align: center;
+}
+
+#allwrapper {
+  display: inherit;
+  overflow-y: auto;
+}
+
+.grid-container-1 h1 {
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.grid-item-1 {
+  width: 15%;
+  margin: 2.3%;
+  float: left;
+  text-align: center;
+  padding-bottom: 4%;
+  padding-top: 2%;
+  border: 2px solid grey;
+}
+
+.grid-item-1 img {
+  width: 100%;
+  height: auto;
+}
+
+#whiskeywrapper {
+  display: none;
+  text-align: center;
+}
+
+.grid-container-whiskey h1 {
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.grid-item-whiskey {
+  width: 15%;
+  margin: 2.3%;
+  float: left;
+  text-align: center;
+  padding-bottom: 4%;
+  padding-top: 2%;
+  border: 2px solid grey;
+}
+
+.grid-item-whiskey img {
+  width: 100%;
+  height: auto;
+}
+
+#beerwrapper {
+  display: none;
+  text-align: center;
+}
+
+.grid-container-beer h1 {
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.grid-item-beer {
+  width: 15%;
+  margin: 2.3%;
+  float: left;
+  text-align: center;
+  padding-bottom: 4%;
+  padding-top: 2%;
+  border: 2px solid grey;
+}
+
+.grid-item-beer img {
+  width: 100%;
+  height: auto;
+}
+
+#liquerwrapper {
+  display: none;
+  text-align: center;
+}
+
+.grid-container-liquer h1 {
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.grid-item-liquer {
+  width: 15%;
+  margin: 2.3%;
+  float: left;
+  text-align: center;
+  padding-bottom: 4%;
+  padding-top: 2%;
+  border: 2px solid grey;
+}
+
+.grid-item-liquer img {
+  width: 100%;
+  height: auto;
+}
+
+#spiritswrapper {
+  display: none;
+  text-align: center;
+}
+
+.grid-container-spirits h1 {
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.grid-item-spirits {
+  display: inherit;
+  width: 15%;
+  margin: 2.3%;
+  float: left;
+  text-align: center;
+  padding-bottom: 4%;
+  padding-top: 2%;
+  border: 2px solid grey;
+}
+
+.grid-item-spirits img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 800px) {
+  .navitem-alt {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 26px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+    background-size: cover;
+  }
+
+  .top-bar-alt {
+    width: 100%;
+    height: 70px;
+    padding-top: 17px;
+    position: fixed;
+    z-index: 2;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0);
+    transition: all 0.4s;
+  }
+
+  .logo-alt {
+    float: left;
+    margin-left: 20px;
+    width: 100px;
+    height: 70px;
+    transition: all 0.4s;
+  }
+
+  #heroimg {
+    font-size: 3.5em;
+  }
+
+  #heroimg-2 {
+    font-size: 3.5em;
+    height: 70vh;
+  }
+
+  #left h3 {
+    font-size: 3.5em;
+    transform: translateY(650%);
+  }
+
+  #right h3 {
+    font-size: 3.5em;
+    transform: translateY(650%);
+  }
+
+  #footer {
+    overflow-y: auto;
+  }
+
+  #footer h5 {
+    margin-bottom: 20px;
+  }
+
+  #footer p {
+    font-family: "helvetica neue";
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .footer-line {
+    height: 30vh;
+  }
+
+  .info {
+    width: 25%;
+  }
+
+  .location {
+    width: 20%;
+  }
+
+  #about {
+    height: 95vh;
+  }
+
+  #about h2 {
+    width: 100%;
+    height: 25vh;
+    top: 12%;
+    font-size: 3.5em;
+  }
+
+  #booking {
+    height: 95vh;
+  }
+
+  #booking h2 {
+    width: 100%;
+    height: 25vh;
+    top: 12%;
+    font-size: 3.5em;
+  }
+
+  .So-Me h5 {
+    padding-bottom: 0px;
+  }
+
+  .So-Me img {
+    width: 60%;
+    padding-left: 15%;
+    transform: translateY(-20px);
+  }
+
+  .So-Me a:nth-child(4) {
+    padding-left: 0%;
+  }
+
+  #bookingimg {
+    display: none;
+  }
+
+  .booking-content p {
+    text-align: center;
+    position: absolute;
+    font-weight: normal;
+    width: 60%;
+    right: 0;
+    padding: 20%;
+    padding-top: 10%;
+    font-size: 2em;
+    float: left;
+  }
+
+  .booking-content p:nth-child(3) {
+    position: absolute;
+    width: 60%;
+    right: 0;
+    top: 35vh;
+    padding: 20%;
+    padding-top: 6%;
+    font-size: 2em;
+    float: left;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 699px) {
+  body {
+    text-align: center;
+  }
+
+  .navitem {
+    display: none;
+  }
+
+  .navitem-alt {
+    display: none;
+  }
+
+  .top-bar {
+    width: 100%;
+  }
+
+  .top-bar-alt {
+    width: 100%;
+    height: 70px;
+    padding-top: 17px;
+    position: fixed;
+    z-index: 2;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0);
+    transition: all 0.4s;
+  }
+
+  .logo-alt {
+    float: left;
+    margin-left: 20px;
+    width: 100px;
+    height: 70px;
+    transition: all 0.4s;
+  }
+
+  #heroimg {
+    font-size: 3.5em;
+    font-weight: normal;
+  }
+
+  #heroimg-2 {
+    font-size: 3.5em;
+    height: 70vh;
+    font-weight: normal;
+  }
+
+  #FandD {
+    display: none;
+  }
+
+  #FandD-mobile {
+    display: inherit;
+    width: 100%;
+    position: relative;
+  }
+
+  #goToDesktop {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 1),
+      rgba(50, 106, 140, 0.65)), url(../images/img-2.jpg);
+    opacity: 1;
+    position: relative;
+    left: 0;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+
+  #goToDesktop h3 {
+    width: 90%;
+    padding-left: 5%;
+    color: white;
+    -webkit-text-stroke: 0.5px black;
+    font-size: 3em;
+    text-align: center;
+    transform: translateY(30%);
+  }
+
+  #goToDesktop p {
+    color: white;
+    -webkit-text-stroke: 0.5px black;
+    font-size: 4em;
+    text-align: center;
+    transform: translateY(150%);
+  }
+
+  #footer {
+    height: 100vh;
+  }
+
+  #footer h5 {
+    margin-bottom: 2px;
+  }
+
+  #footer p {
+    font-family: "helvetica neue";
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .footer-line {
+    width: 99%;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(15, 255, 230, 0.20) 0%, rgba(32, 109, 111, 0.75) 38%, rgba(71, 22, 201, 0.51) 90%);
+    margin-top: 7px;
+  }
+
+  .info {
+    width: 97%;
+    margin-left: 3%;
+  }
+
+  .info div {
+    width: 100%;
+  }
+
+  .location {
+    width: 100%;
+  }
+
+  .location div {
+    width: 100%;
+  }
+
+  .hours {
+    width: 100%;
+  }
+
+  .days {
+    width: 40%;
+    text-align: right;
+  }
+
+  .time {
+    width: 60%;
+  }
+
+  .So-Me {
+    width: 100%;
+  }
+
+  .So-Me h5 {
+    padding-bottom: 7.5px
+  }
+
+  .So-Me img {
+    width: 22%;
+    padding-left: 2%;
+  }
+
+  .So-Me a:nth-child(4) {
+    padding-left: 0%;
+  }
+
+  #about {
+    height: 95vh;
+  }
+
+  #about h2 {
+    width: 100%;
+    height: 25vh;
+    top: 12%;
+    font-size: 3.5em;
+  }
+
+  .about-content p {
+    padding: 10%;
+    padding-bottom: 0%;
+    padding-top: 4%;
+    font-size: 1.4em
+  }
+
+  .about-content p:nth-child(1) {
+    font-size: 1.5em;
+    padding-top: 6%;
+    font-weight: bold;
+  }
+
+  #booking {
+    height: 100vh;
+  }
+
+  #booking h2 {
+    width: 100%;
+    height: 25vh;
+    top: 12%;
+    font-size: 3.5em;
+  }
+
+  .booking-content {
+    height: 75vh;
+  }
+
+  #bookingimg {
+    display: none;
+  }
+
+  .booking-content p {
+    text-align: center;
+    position: absolute;
+    font-weight: normal;
+    width: 60%;
+    right: 0;
+    padding: 20%;
+    padding-top: 10%;
+    font-size: 1.3em;
+    float: left;
+  }
+
+  .booking-content p:nth-child(3) {
+    position: absolute;
+    width: 60%;
+    right: 0;
+    top: 35vh;
+    padding: 20%;
+    padding-top: 6%;
+    font-size: 1.3em;
+    float: left;
+  }
+
+  #menu a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+  }
+
+  #menu a:hover {
+    color: rgb(172, 106, 242, 0.20);
+  }
+
+  #menuToggle {
+    display: inherit;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    z-index: 1;
+    text-align: left;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+  }
+
+  /*
+ * Just a quick hamburger
+ */
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: white;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  /*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+  #menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: white;
+  }
+
+  /*
+ * But let's hide the middle one.
+ */
+  #menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  /*
+ * Ohyeah and the last one should go the other direction
+ */
+  #menuToggle input:checked~span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  /*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+  #menu {
+    position: absolute;
+    width: 100vh;
+    margin: -100px 0 0 0;
+    padding-top: 125px;
+    right: -100px;
+    height: 100vh;
+    background: linear-gradient(190deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.75) 55%, rgba(253, 187, 45, 0) 100%),
+      url(../images/img-2.jpg);
+    ;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  }
+
+  #menu li {
+    width: 30%;
+    padding: 5%;
+    padding-right: 10%;
+    padding-left: 50%;
+    font-size: 2em;
+  }
+
+  /*
+ * And let's fade it in from the left
+ */
+  #menuToggle input:checked~ul {
+    transform: scale(1.0, 1.0);
+    opacity: 1;
+  }
+}
